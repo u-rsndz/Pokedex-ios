@@ -1,14 +1,14 @@
 //
-//  PokeDexUriApp.swift
-//  PokeDexUri
+//  PokeDexApp.swift
+//  PokeDex
 //
-//  Created by Carlos on 29/09/26.
+//  Created by Uriel on 29/09/26.
 //
 
 import SwiftUI
 
 @main
-struct PokeDexUriApp: App {
+struct PokeDexApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
