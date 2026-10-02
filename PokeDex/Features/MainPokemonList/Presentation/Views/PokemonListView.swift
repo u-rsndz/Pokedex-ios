@@ -9,7 +9,10 @@ import Foundation
 import SwiftUI
 
 struct PokemonListView: View {
-    @StateObject private var viewModel = PokemonListViewModel()
+    @StateObject private var viewModel = PokemonListViewModel(fetchPokemonsUseCase:
+                                                                FetchPokemonsUseCase(repository:
+                                                                                        PokemonRepository(remoteDataManager:
+                                                                                                            PokemonRemoteDataManager())))
     
     var body: some View {
         NavigationStack {

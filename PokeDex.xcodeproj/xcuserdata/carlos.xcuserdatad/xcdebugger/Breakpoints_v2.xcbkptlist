@@ -162,14 +162,14 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "CBDFF95F-867A-40B8-BB7C-C8F966FA6AA8 - a811d8c74e36db63"
+                  uuid = "CBDFF95F-867A-40B8-BB7C-C8F966FA6AA8 - 2f1b326037d86a76"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "(1) suspend resume partial function for PokeDex.PokemonListViewModel.loadPokemons() async -&gt; ()"
                   moduleName = "PokeDex"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/carlos/Documents/xcode/PokeDex/PokeDex/ViewModels/PokemonListViewModel.swift"
+                  urlString = "file:///Users/carlos/Documents/GitHub/Pokedex-ios/PokeDex/ViewModels/PokemonListViewModel.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "38"
@@ -177,14 +177,14 @@
                   offsetFromSymbolStart = "103">
                </Location>
                <Location
-                  uuid = "CBDFF95F-867A-40B8-BB7C-C8F966FA6AA8 - 2d92cb3b3f59d454"
+                  uuid = "CBDFF95F-867A-40B8-BB7C-C8F966FA6AA8 - aa98219c46b76541"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "(2) await resume partial function for PokeDex.PokemonListViewModel.loadPokemons() async -&gt; ()"
                   moduleName = "PokeDex"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/carlos/Documents/xcode/PokeDex/PokeDex/ViewModels/PokemonListViewModel.swift"
+                  urlString = "file:///Users/carlos/Documents/GitHub/Pokedex-ios/PokeDex/ViewModels/PokemonListViewModel.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "38"
@@ -192,14 +192,14 @@
                   offsetFromSymbolStart = "52">
                </Location>
                <Location
-                  uuid = "CBDFF95F-867A-40B8-BB7C-C8F966FA6AA8 - 9bc3b20e53ab9d65"
+                  uuid = "CBDFF95F-867A-40B8-BB7C-C8F966FA6AA8 - 1cc958a92a452c70"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "(3) suspend resume partial function for PokeDex.PokemonListViewModel.loadPokemons() async -&gt; ()"
                   moduleName = "PokeDex"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/carlos/Documents/xcode/PokeDex/PokeDex/ViewModels/PokemonListViewModel.swift"
+                  urlString = "file:///Users/carlos/Documents/GitHub/Pokedex-ios/PokeDex/ViewModels/PokemonListViewModel.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "38"
@@ -207,14 +207,14 @@
                   offsetFromSymbolStart = "73">
                </Location>
                <Location
-                  uuid = "CBDFF95F-867A-40B8-BB7C-C8F966FA6AA8 - 9c5a98eaaa123064"
+                  uuid = "CBDFF95F-867A-40B8-BB7C-C8F966FA6AA8 - 1b50724dd3fc8171"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "(4) suspend resume partial function for PokeDex.PokemonListViewModel.loadPokemons() async -&gt; ()"
                   moduleName = "PokeDex"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/carlos/Documents/xcode/PokeDex/PokeDex/ViewModels/PokemonListViewModel.swift"
+                  urlString = "file:///Users/carlos/Documents/GitHub/Pokedex-ios/PokeDex/ViewModels/PokemonListViewModel.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "38"
@@ -256,14 +256,14 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "654BEF9A-C95A-4DE1-A8D6-E6AAF1A34FAC - 9bc3b20e53ab9de9"
+                  uuid = "654BEF9A-C95A-4DE1-A8D6-E6AAF1A34FAC - 1cc958a92a452cf4"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "(3) suspend resume partial function for PokeDex.PokemonListViewModel.loadPokemons() async -&gt; ()"
                   moduleName = "PokeDex"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/carlos/Documents/xcode/PokeDex/PokeDex/ViewModels/PokemonListViewModel.swift"
+                  urlString = "file:///Users/carlos/Documents/GitHub/Pokedex-ios/PokeDex/ViewModels/PokemonListViewModel.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "42"
@@ -271,14 +271,14 @@
                   offsetFromSymbolStart = "91">
                </Location>
                <Location
-                  uuid = "654BEF9A-C95A-4DE1-A8D6-E6AAF1A34FAC - 9c5a98eaaa1230e8"
+                  uuid = "654BEF9A-C95A-4DE1-A8D6-E6AAF1A34FAC - 1b50724dd3fc81f5"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "(4) suspend resume partial function for PokeDex.PokemonListViewModel.loadPokemons() async -&gt; ()"
                   moduleName = "PokeDex"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/carlos/Documents/xcode/PokeDex/PokeDex/ViewModels/PokemonListViewModel.swift"
+                  urlString = "file:///Users/carlos/Documents/GitHub/Pokedex-ios/PokeDex/ViewModels/PokemonListViewModel.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "42"
