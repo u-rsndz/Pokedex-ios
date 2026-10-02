@@ -1,4 +1,154 @@
-PokeDex.xcodeproj/project.xcworkspace/xcuserdata/carlos.xcuserdatad/UserInterfaceState.xcuserstate
-/PokeDex.xcodeproj/project.xcworkspace/xcuserdata
-/PokeDex.xcodeproj/project.xcworkspace/xcuserdata/carlos.xcuserdatad
+# ============================================
+
+# Xcode
+
+# ============================================
+
+# User-specific Xcode settings
+
 *.xcuserstate
+*.xcuserdatad
+xcuserdata/
+
+# Xcode workspace user data
+
+*.xcworkspace/xcuserdata/
+*.xcodeproj/xcuserdata/
+
+# Xcode generated files
+
+DerivedData/
+build/
+
+# Archives
+
+*.xcarchive
+
+# ============================================
+
+# Swift / Xcode
+
+# ============================================
+
+# Swift Package Manager
+
+.build/
+.swiftpm/
+Package.resolved
+
+# Xcode localizations
+
+*.xcloc
+
+# ============================================
+
+# CocoaPods
+
+# ============================================
+
+Pods/
+
+# ============================================
+
+# Carthage
+
+# ============================================
+
+Carthage/Build/
+
+# ============================================
+
+# Fastlane
+
+# ============================================
+
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output/
+
+# ============================================
+
+# Code coverage
+
+# ============================================
+
+*.gcno
+*.gcda
+*.gcov
+coverage/
+*.xccovarchive
+
+# ============================================
+
+# iOS Simulator
+
+# ============================================
+
+*.simruntime
+
+# ============================================
+
+# macOS
+
+# ============================================
+
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon files
+
+Icon
+Icon?
+
+# ============================================
+
+# Temporary / backup files
+
+# ============================================
+
+*.swp
+*.swo
+*~
+*.tmp
+*.temp
+
+# ============================================
+
+# Secrets / local configuration
+
+# ============================================
+
+# Environment variables
+
+.env
+.env.*
+
+# Local configuration files
+
+*.local
+
+# ============================================
+
+# Firebase / Google services
+
+# ============================================
+
+# Uncomment these if you don't want to commit
+
+# GoogleService-Info.plist
+
+# ============================================
+
+# API keys / secrets
+
+# ============================================
+
+# Uncomment if these files contain secrets
+
+# Secrets.plist
+
+# Config.plist
+
+# APIKeys.swift
