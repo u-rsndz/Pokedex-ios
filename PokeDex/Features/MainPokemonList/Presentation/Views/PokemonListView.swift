@@ -10,10 +10,10 @@ import SwiftUI
 
 struct PokemonListView: View {
     @StateObject private var viewModel = PokemonListViewModel(fetchPokemonsUseCase:
-                                                                FetchPokemonsUseCase(repository:
-                                                                                        PokemonRepository(remoteDataManager:
-                                                                                                            PokemonRemoteDataManager())))
-    
+        FetchPokemonsUseCase(repository:
+            PokemonRepository(remoteDataManager:
+                PokemonRemoteDataManager())))
+
     var body: some View {
         NavigationStack {
             Group {
@@ -24,7 +24,9 @@ struct PokemonListView: View {
                         .foregroundColor(.red)
                 } else {
                     List(viewModel.filteredPokemons) { pokemon in
-                        NavigationLink(destination: PokemonDetailView(pokemonUrl: pokemon.url, pokemonName: pokemon.name)) {
+                        NavigationLink(
+                            destination: PokemonDetailView(pokemonUrl: pokemon.url, pokemonName: pokemon.name)
+                        ) {
                             PokemonRowView(pokemon: pokemon)
                         }
                     }

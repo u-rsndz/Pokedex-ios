@@ -8,8 +8,7 @@
 import XCTest
 
 final class PokeDexUITestsLaunchTests: XCTestCase {
-
-    override class var runsForEachTargetApplicationUIConfiguration: Bool {
+    override static var runsForEachTargetApplicationUIConfiguration: Bool {
         true
     }
 
@@ -17,7 +16,7 @@ final class PokeDexUITestsLaunchTests: XCTestCase {
         continueAfterFailure = false
     }
 
-    func testLaunch() throws {
+    func testLaunch() {
         let app = XCUIApplication()
         app.launch()
 

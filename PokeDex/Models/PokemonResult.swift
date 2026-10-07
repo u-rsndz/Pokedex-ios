@@ -10,7 +10,7 @@ import Foundation
 struct PokemonResult: Codable, Identifiable, Equatable {
     let name: String
     let url: String
-    
+
     var id: Int {
         let components = url.split(separator: "/").compactMap { Int($0) }
         return components.last ?? 0

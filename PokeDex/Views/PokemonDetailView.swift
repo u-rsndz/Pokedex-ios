@@ -10,26 +10,26 @@ import SwiftUI
 struct PokemonDetailView: View {
     @StateObject private var viewModel: PokemonDetailViewModel
     @EnvironmentObject private var teamManager: TeamManager
-    
+
     init(pokemonUrl: String, pokemonName: String) {
         _viewModel = StateObject(wrappedValue: PokemonDetailViewModel(pokemonUrl: pokemonUrl, pokemonName: pokemonName))
     }
-    
+
     private var isAlreadyInTeam: Bool {
         teamManager.isAlreadyInTeam(viewModel.currentPokemonResult.id)
     }
-    
+
     private var isTeamFull: Bool {
         teamManager.team.count >= 6
     }
-    
+
     var body: some View {
         ScrollView {
             VStack(spacing: 0) {
                 ZStack {
                     viewModel.primaryTypeColor
                         .opacity(0.30)
-                    
+
                     if viewModel.isLoading {
                         ProgressView("Loading details...")
                             .padding(.top, 100)
@@ -45,7 +45,7 @@ struct PokemonDetailView: View {
                             VStack {
                                 AsyncImage(url: imageURL) { phase in
                                     switch phase {
-                                    case .success(let image):
+                                    case let .success(image):
                                         image
                                             .resizable()
                                             .scaledToFit()
@@ -70,7 +70,7 @@ struct PokemonDetailView: View {
                     }
                 }
                 .frame(maxWidth: .infinity)
-                
+
                 // DETAILS CONTENT SECTION
                 if let detail = viewModel.detail {
                     VStack(spacing: 20) {
@@ -100,7 +100,7 @@ struct PokemonDetailView: View {
                     .foregroundColor(.black)
                     .padding()
             }
-            
+
             ToolbarItem(placement: .navigationBarTrailing) {
                 if !isTeamFull {
                     Button {
