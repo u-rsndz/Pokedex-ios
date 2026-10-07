@@ -9,7 +9,7 @@ import SwiftUI
 
 struct PokemonTeamView: View {
     @EnvironmentObject private var teamManager: TeamManager
-    
+
     var body: some View {
         NavigationStack {
             Group {
@@ -18,11 +18,11 @@ struct PokemonTeamView: View {
                         Image(systemName: "house")
                             .font(.system(size: 48))
                             .foregroundColor(.secondary)
-                        
+
                         Text("No Pokémon on your team")
                             .font(.title2)
                             .fontWeight(.bold)
-                        
+
                         Text("Go to the Pokédex tab and tap '+' to add Pokémon.")
                             .font(.subheadline)
                             .foregroundColor(.secondary)

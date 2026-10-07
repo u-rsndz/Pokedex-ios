@@ -35,6 +35,9 @@
 		07AC4ECD306C2AB400B026D6 /* PokemonDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AC4ECC306C2AB400B026D6 /* PokemonDetailView.swift */; };
 		07AC4ECF306C2AF100B026D6 /* StatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AC4ECE306C2AF100B026D6 /* StatView.swift */; };
 		07AC4ED1306C2B2E00B026D6 /* PokemonTeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AC4ED0306C2B2E00B026D6 /* PokemonTeamView.swift */; };
+		07C100022600000000B026D6 /* config.json in Resources */ = {isa = PBXBuildFile; fileRef = 07C100012600000000B026D6 /* config.json */; };
+		07C100042600000000B026D6 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C100032600000000B026D6 /* AppConfig.swift */; };
+		07C100062600000000B026D6 /* AppConfigTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C100052600000000B026D6 /* AppConfigTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +89,9 @@
 		07AC4ECC306C2AB400B026D6 /* PokemonDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetailView.swift; sourceTree = "<group>"; };
 		07AC4ECE306C2AF100B026D6 /* StatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatView.swift; sourceTree = "<group>"; };
 		07AC4ED0306C2B2E00B026D6 /* PokemonTeamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonTeamView.swift; sourceTree = "<group>"; };
+		07C100012600000000B026D6 /* config.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = config.json; sourceTree = "<group>"; };
+		07C100032600000000B026D6 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		07C100052600000000B026D6 /* AppConfigTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfigTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -240,6 +246,8 @@
 		07AC4E87306C268700B026D6 /* PokeDex */ = {
 			isa = PBXGroup;
 			children = (
+				07C100082600000000B026D6 /* Config */,
+				07C100072600000000B026D6 /* Resources */,
 				07A8BF2E30702F0400738558 /* Features */,
 				07AC4EC5306C29C900B026D6 /* ViewModels */,
 				07AC4EBC306C284800B026D6 /* Services */,
@@ -251,6 +259,22 @@
 				07AC4E8E306C268900B026D6 /* Preview Content */,
 			);
 			path = PokeDex;
+			sourceTree = "<group>";
+		};
+		07C100072600000000B026D6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				07C100012600000000B026D6 /* config.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		07C100082600000000B026D6 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				07C100032600000000B026D6 /* AppConfig.swift */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 		07AC4E8E306C268900B026D6 /* Preview Content */ = {
@@ -265,6 +289,7 @@
 			isa = PBXGroup;
 			children = (
 				07AC4E99306C268900B026D6 /* PokeDexTests.swift */,
+				07C100052600000000B026D6 /* AppConfigTests.swift */,
 			);
 			path = PokeDexTests;
 			sourceTree = "<group>";
@@ -424,6 +449,7 @@
 			files = (
 				07AC4E90306C268900B026D6 /* Preview Assets.xcassets in Resources */,
 				07AC4E8D306C268900B026D6 /* Assets.xcassets in Resources */,
+				07C100022600000000B026D6 /* config.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,6 +497,7 @@
 				07AC4EC2306C28F100B026D6 /* PokemonService.swift in Sources */,
 				07A8BF3F307037F100738558 /* FetchPokemonsUseCase.swift in Sources */,
 				07AC4EC9306C2A1A00B026D6 /* PokemonDetailViewModel.swift in Sources */,
+				07C100042600000000B026D6 /* AppConfig.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,6 +506,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				07AC4E9A306C268900B026D6 /* PokeDexTests.swift in Sources */,
+				07C100062600000000B026D6 /* AppConfigTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,10 +10,10 @@ import SwiftUI
 
 struct PokemonRowView: View {
     let pokemon: PokemonResult
-    
+
     var body: some View {
         HStack(spacing: 16) {
-            AsyncImage(url: URL(string: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/\(pokemon.id).png")) { phase in
+            AsyncImage(url: AppConfig.shared.spriteURL(for: pokemon.id)) { phase in
                 if let image = phase.image {
                     image
                         .resizable()
@@ -28,7 +28,7 @@ struct PokemonRowView: View {
             .frame(width: 50, height: 50)
             .background(Color.gray.opacity(0.1))
             .clipShape(RoundedRectangle(cornerRadius: 8))
-            
+
             Text(pokemon.name.capitalized)
                 .font(.headline)
         }

@@ -14,14 +14,16 @@ struct PokemonDetail: Codable {
     let weight: Int
     let types: [TypeEntry]
     let sprites: Sprites
-    
+
     struct Sprites: Codable {
         let frontDefault: String?
     }
+
     struct TypeEntry: Codable {
         let slot: Int
         let type: TypeInfo
     }
+
     struct TypeInfo: Codable {
         let name: String
         let url: String

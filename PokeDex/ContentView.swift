@@ -9,14 +9,14 @@ import SwiftUI //
 
 struct ContentView: View {
     @StateObject private var teamManager = TeamManager()
-    
+
     var body: some View {
         TabView {
             PokemonListView()
                 .tabItem {
                     Label("Pokédex", systemImage: "magnifyingglass")
                 }
-            
+
             PokemonTeamView()
                 .tabItem {
                     Label("Team", systemImage: "house.fill")

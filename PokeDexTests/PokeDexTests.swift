@@ -5,23 +5,16 @@
 //  Created by Uriel on 29/09/26.
 //
 
-import XCTest
 @testable import PokeDex
+import XCTest
 
-// MARK: - Mock Service
-final class MockPokemonService: PokemonServiceProtocol {
+// MARK: - Mock Use Case
+
+final class MockFetchPokemonsUseCase: FetchPokemonsUseCaseProtocol {
     var resultToReturn: Result<[PokemonResult], Error>?
-    var detailResultToReturn: Result<PokemonDetail, Error>?
 
-    func fetchPokemons() async throws -> [PokemonResult] {
+    func execute() async throws -> [PokemonResult] {
         if let result = resultToReturn {
-            return try result.get()
-        }
-        throw NSError(domain: "MockError", code: -1, userInfo: nil)
-    }
-
-    func fetchDetails(from urlString: String) async throws -> PokemonDetail {
-        if let result = detailResultToReturn {
             return try result.get()
         }
         throw NSError(domain: "MockError", code: -1, userInfo: nil)
@@ -29,19 +22,23 @@ final class MockPokemonService: PokemonServiceProtocol {
 }
 
 // MARK: - ViewModel Unit Tests
+
+@MainActor
 final class PokemonListViewModelTests: XCTestCase {
+    // swiftlint:disable implicitly_unwrapped_optional
     private var sut: PokemonListViewModel!
-    private var mockService: MockPokemonService!
+    private var mockUseCase: MockFetchPokemonsUseCase!
+    // swiftlint:enable implicitly_unwrapped_optional
 
     override func setUp() {
         super.setUp()
-        mockService = MockPokemonService()
-        sut = PokemonListViewModel(service: mockService)
+        mockUseCase = MockFetchPokemonsUseCase()
+        sut = PokemonListViewModel(fetchPokemonsUseCase: mockUseCase)
     }
 
     override func tearDown() {
         sut = nil
-        mockService = nil
+        mockUseCase = nil
         super.tearDown()
     }
 
@@ -53,7 +50,7 @@ final class PokemonListViewModelTests: XCTestCase {
             PokemonResult(name: "Pikachu", url: "https://pokeapi.co/api/v2/pokemon/25/"),
             PokemonResult(name: "Bulbasaur", url: "https://pokeapi.co/api/v2/pokemon/1/")
         ]
-        mockService.resultToReturn = .success(mockPokemons)
+        mockUseCase.resultToReturn = .success(mockPokemons)
 
         // When
         await sut.loadPokemons()
@@ -68,7 +65,7 @@ final class PokemonListViewModelTests: XCTestCase {
     func test_loadPokemons_failure_setsErrorMessageAndLoadingToFalse() async {
         // Given
         let expectedError = NSError(domain: "Network", code: 404, userInfo: [NSLocalizedDescriptionKey: "Not Found"])
-        mockService.resultToReturn = .failure(expectedError)
+        mockUseCase.resultToReturn = .failure(expectedError)
 
         // When
         await sut.loadPokemons()
@@ -76,7 +73,7 @@ final class PokemonListViewModelTests: XCTestCase {
         // Then
         XCTAssertTrue(sut.pokemons.isEmpty)
         XCTAssertFalse(sut.isLoading)
-        XCTAssertEqual(sut.errorMessage, "Failed to load: Not Found")
+        XCTAssertEqual(sut.errorMessage, "Not Found")
     }
 
     // MARK: - Search Filtering Tests

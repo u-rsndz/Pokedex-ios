@@ -1,0 +1,15 @@
+{
+  "environment": "development",
+  "api": {
+    "baseURL": "https://pokeapi.co/api/v2",
+    "pokemonPath": "/pokemon",
+    "defaultLimit": 151,
+    "timeoutInterval": 30.0
+  },
+  "sprites": {
+    "baseURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon"
+  },
+  "features": {
+    "enableLogging": true
+  }
+}
