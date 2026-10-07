@@ -1,0 +1,13 @@
+# .swiftformat
+# Configuración básica de SwiftFormat para proyectos iOS (Swift 5.0)
+
+--swiftversion 5.0
+--indent 4
+--allman false
+--linebreaks lf
+--semicolons never
+--trimwhitespace always
+--stripunusedargs always
+--self remove
+--disable redundantSelf,wrapMultilineStatementBraces,trailingCommas
+--exclude Pods,Carthage,DerivedData,.build,fastlane,"PokeDex/Preview Content"

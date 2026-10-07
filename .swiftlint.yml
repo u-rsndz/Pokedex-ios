@@ -1,0 +1,97 @@
+# .swiftlint.yml
+# Configuración básica de SwiftLint para proyectos iOS (Swift 5.0+)
+
+# Carpetas a incluir en la revisión
+included:
+  - PokeDex
+  - PokeDexTests
+  - PokeDexUITests
+
+# Carpetas y archivos excluidos
+excluded:
+  - Pods
+  - Carthage
+  - DerivedData
+  - .build
+  - PokeDex/Preview Content
+
+# Reglas deshabilitadas
+disabled_rules:
+  - todo # Permite comentarios TODO sin marcar warnings
+  - trailing_whitespace # SwiftFormat gestiona los espacios en blanco
+
+# Reglas opcionales recomendadas para estándares de calidad en iOS
+opt_in_rules:
+  - empty_count
+  - empty_string
+  - fatal_error_message
+  - force_unwrapping
+  - implicitly_unwrapped_optional
+  - redundant_nil_coalescing
+  - sorted_first_last
+  - unneeded_break_in_switch
+  - vertical_whitespace_closing_braces
+  - vertical_whitespace_opening_braces
+  - yoda_condition
+  - closure_spacing
+  - operator_usage_whitespace
+  - redundant_type_annotation
+
+# Parámetros y umbrales de reglas
+line_length:
+  warning: 120
+  error: 160
+  ignores_urls: true
+  ignores_function_declarations: true
+  ignores_comments: true
+  ignores_interpolated_strings: true
+
+type_body_length:
+  warning: 350
+  error: 500
+
+file_length:
+  warning: 500
+  error: 1000
+  ignore_comment_only_lines: true
+
+function_body_length:
+  warning: 60
+  error: 100
+
+cyclomatic_complexity:
+  warning: 15
+  error: 25
+
+type_name:
+  min_length: 3
+  max_length:
+    warning: 50
+    error: 60
+  excluded:
+    - ID
+    - App
+
+identifier_name:
+  min_length:
+    warning: 2
+    error: 1
+  max_length:
+    warning: 50
+    error: 70
+  excluded:
+    - id
+    - x
+    - y
+    - i
+    - j
+    - to
+
+force_unwrapping:
+  severity: warning
+
+force_cast:
+  severity: warning
+
+force_try:
+  severity: warning
